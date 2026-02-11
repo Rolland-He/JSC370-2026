@@ -435,8 +435,9 @@ specialty_sentence_stats = (
 
 ```{python}
 #| eval: false
-
-(ggplot(mt_samples[mt_samples['avg_sentence_length'] > 0], aes(x='reorder(medical_specialty, avg_sentence_length)', y='avg_sentence_length'))  # Hint: aggregated by specialty
+  
+(ggplot(specialty_sentence_stats, aes(x='reorder(medical_specialty, avg_sentence_length)', y='avg_sentence_length'))
+# Hint: aggregated by specialty
  + geom_boxplot(fill='coral', alpha=0.7)
  + coord_flip()
  + labs(x='Medical Specialty', y='Average Sentence Length (words)', title='Average Sentence Length by Medical Specialty')
@@ -446,7 +447,9 @@ specialty_sentence_stats = (
 ```
 
 Summarize: Do you notice any patterns sentence length across different medical specialties?
-- Yes, we can see that the sentence length is generally between 10 and 50 words with quite similar distribution, mean and median.
+- Yes, we can see that the sentence length is generally between 17.5 and 25 words. 
+- Speech - language has the longest average sentence length.
+- Hospice - Palliative Care has the shortest average sentence length.
 
 ---
 
