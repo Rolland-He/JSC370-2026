@@ -6,6 +6,8 @@ format:
 jupyter: python3
 ---
 
+# Rolland (Xucheng) He 1008905909 GitHub repo (branch: lab6): https://github.com/Rolland-He/JSC370-2026/tree/lab6
+
 # Learning goals
 
 - Use tokenization and n-grams to extract features from text
